@@ -1,6 +1,15 @@
 @import 'global';
 @import 'reset';
 
+.header{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px;
+    }
+}
+
 .header__button{
     display: flex;
     flex-direction: column;

@@ -75,6 +75,13 @@ table {
   border-spacing: 0;
 }
 
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px;
+}
+
 .header__button {
   display: flex;
   flex-direction: column;
