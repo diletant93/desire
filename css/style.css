@@ -75,4 +75,24 @@ table {
   border-spacing: 0;
 }
 
+.header__button {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 37px;
+}
+.header__button span {
+  display: block;
+  background-color: black;
+  border-radius: 1px;
+  height: 2px;
+  margin-left: auto;
+}
+.header__button span:nth-child(n) {
+  width: 24px;
+}
+.header__button span:nth-child(2n) {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

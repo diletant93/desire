@@ -1,3 +1,22 @@
 @import 'global';
 @import 'reset';
 
+.header__button{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 37px;
+    span{
+        display: block;
+        background-color: black;
+        border-radius: 1px;
+        height: 2px;
+        margin-left: auto;
+    }
+    span:nth-child(n){
+        width: 24px;    
+    }
+    span:nth-child(2n){
+        width: 100%;
+    }
+}
