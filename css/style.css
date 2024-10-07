@@ -85,6 +85,26 @@ table {
   align-items: center;
   padding: 43px;
 }
+.header__button {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  width: 37px;
+}
+.header__button span {
+  display: block;
+  background-color: black;
+  border-radius: 2px;
+  height: 3px;
+  margin-left: auto;
+}
+.header__button span:nth-child(n) {
+  width: 24px;
+}
+.header__button span:nth-child(2n) {
+  width: 100%;
+}
 
 .menu:nth-of-type(1) {
   padding-left: 35px;
@@ -99,26 +119,6 @@ table {
 
 .logo {
   margin: 0 auto;
-}
-
-.header__button {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  width: 37px;
-}
-.header__button span {
-  display: block;
-  background-color: black;
-  border-radius: 1px;
-  height: 2px;
-  margin-left: auto;
-}
-.header__button span:nth-child(n) {
-  width: 24px;
-}
-.header__button span:nth-child(2n) {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,33 @@
 
 
 .header{
+    
     &__inner{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 43px;
+    }
+
+    &__button{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        width: 37px;
+        span{
+            display: block;
+            background-color: black;
+            border-radius: 2px;
+            height: 3px;
+            margin-left: auto;
+        }
+        span:nth-child(n){
+            width: 24px;    
+        }
+        span:nth-child(2n){
+            width: 100%;
+        }
     }
 }
 .menu{
@@ -25,23 +47,4 @@
 }
 .logo{
     margin: 0 auto;
-}
-.header__button{
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 37px;
-    span{
-        display: block;
-        background-color: black;
-        border-radius: 1px;
-        height: 2px;
-        margin-left: auto;
-    }
-    span:nth-child(n){
-        width: 24px;    
-    }
-    span:nth-child(2n){
-        width: 100%;
-    }
 }
