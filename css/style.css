@@ -46,6 +46,10 @@ time, mark, audio, video {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -79,7 +83,22 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px;
+  padding: 43px;
+}
+
+.menu:nth-of-type(1) {
+  padding-left: 35px;
+}
+.menu:nth-of-type(2) {
+  padding-right: 60px;
+}
+.menu__list {
+  display: flex;
+  gap: 80px;
+}
+
+.logo {
+  margin: 0 auto;
 }
 
 .header__button {
