@@ -1,3 +1,8 @@
+.menu__list-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
 html,
 body {
   height: 100%;
@@ -8,6 +13,7 @@ body {
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
+  color: #5A5A5A;
 }
 
 .wrapper {
@@ -81,11 +87,6 @@ table {
   border-spacing: 0;
 }
 
-.menu__list-item {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -142,6 +143,13 @@ table {
 
 .logo {
   margin: 0 auto;
+}
+
+.footer__copyright {
+  padding: 42px 10px 41px;
+  background-color: #363838;
+  color: #A1A1A1;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
