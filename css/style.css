@@ -3,6 +3,13 @@ body {
   height: 100%;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -40,8 +47,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font-family: inherit;
   vertical-align: baseline;
   box-sizing: inherit;
 }
@@ -54,10 +59,6 @@ a {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
-}
-
-body {
-  line-height: 1;
 }
 
 ol, ul {
