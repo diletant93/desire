@@ -66,10 +66,39 @@
 }
 
 .footer{
-   
-    
+
+    &__content{
+        background-color: #DFDFDF;
+        padding-top: 61px;
+        padding-bottom: 80px;
+    }
+    &__inner{
+        display: flex;
+        flex-direction: row;   
+        gap:90px;
+        padding-right: 97px;
+    }
+    &__info{
+        max-width: 536px;
+    }
+    &__info-text{
+        @extend %text-font;
+        color: $default;
+        max-width: 476px;
+        margin-bottom: 22px;
+    }
+    &__menu{
+        margin-left: auto;
+    }
+
+    &__info-title{
+        color: $black;
+        @extend %title-font;
+        margin-bottom: 14px;
+        line-height: 23px;
+    }
     &__copyright{
-        padding: 42px 10px 41px;
+        padding: 42px 0 41px;
         background-color: $black;
         color: #A1A1A1;
         text-align: center;

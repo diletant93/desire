@@ -1,6 +1,11 @@
-.menu__list-item {
+.footer__info-title, .menu__list-item {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+
+.footer__info-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 html,
@@ -56,6 +61,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: inherit;
   color: inherit;
+  font-size: inherit;
 }
 
 a {
@@ -145,8 +151,35 @@ table {
   margin: 0 auto;
 }
 
+.footer__content {
+  background-color: #DFDFDF;
+  padding-top: 61px;
+  padding-bottom: 80px;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  padding-right: 97px;
+}
+.footer__info {
+  max-width: 536px;
+}
+.footer__info-text {
+  color: #5A5A5A;
+  max-width: 476px;
+  margin-bottom: 22px;
+}
+.footer__menu {
+  margin-left: auto;
+}
+.footer__info-title {
+  color: #363838;
+  margin-bottom: 14px;
+  line-height: 23px;
+}
 .footer__copyright {
-  padding: 42px 10px 41px;
+  padding: 42px 0 41px;
   background-color: #363838;
   color: #A1A1A1;
   text-align: center;
