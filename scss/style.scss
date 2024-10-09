@@ -75,15 +75,15 @@
     &__inner{
         display: flex;
         flex-direction: row;   
-        gap:90px;
+        gap:99px;
         padding-right: 97px;
     }
     &__info{
         max-width: 539px;
     }
     &__info-title{
-        color: $black;
         @extend %title-font;
+        color: $black;
         margin-bottom: 14px;
         line-height: 23px;
     }
@@ -105,10 +105,24 @@
         display: flex;
         gap: 9px;
     }
-
-    // HERE
-    // &__info-email::before{
-    //     content: '\f0e0';
+    &__social-list,
+     &__menu-list{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__social-item ,
+     &__menu-item{
+        @extend %accent-font;
+        color:  $grey;
+        font-size: 14px;
+        padding-left: 28px;
+        
+    }
+   
+    // // HERE
+    // // &__info-email::before{
+    // //     content: '\f0e0';
     //     @extend %icon-font;
     //     position: absolute;
     //     left:-30px;
@@ -142,12 +156,12 @@
 }
 
 .submit-btn{
+    @extend %accent-font;
     width: 160px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: $black;
     font-size: 16px;
-    @extend %accent-font;
     color: #FFFFF0;
     border: none;
     border-radius: 21px;

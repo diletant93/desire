@@ -8,7 +8,7 @@
   font-weight: 400;
 }
 
-.submit-btn, .footer__info-email {
+.submit-btn, .footer__social-item, .footer__menu-item, .footer__info-email {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -164,7 +164,7 @@ table {
 .footer__inner {
   display: flex;
   flex-direction: row;
-  gap: 90px;
+  gap: 99px;
   padding-right: 97px;
 }
 .footer__info {
@@ -190,6 +190,16 @@ table {
 .footer__form {
   display: flex;
   gap: 9px;
+}
+.footer__social-list, .footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__social-item, .footer__menu-item {
+  color: #707070;
+  font-size: 14px;
+  padding-left: 28px;
 }
 .footer__menu {
   margin-left: auto;
