@@ -3,12 +3,12 @@
   font-weight: 700;
 }
 
-.footer__info-text {
+.input-data::placeholder, .footer__info-text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
-.footer__info-email {
+.submit-btn, .footer__info-email {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -168,7 +168,7 @@ table {
   padding-right: 97px;
 }
 .footer__info {
-  max-width: 536px;
+  max-width: 539px;
 }
 .footer__info-title {
   color: #363838;
@@ -187,6 +187,10 @@ table {
   padding-left: 30px;
   position: relative;
 }
+.footer__form {
+  display: flex;
+  gap: 9px;
+}
 .footer__menu {
   margin-left: auto;
 }
@@ -195,6 +199,32 @@ table {
   background-color: #363838;
   color: #A1A1A1;
   text-align: center;
+}
+
+.input-data {
+  width: 368px;
+  padding: 13px 10px 11px 18px;
+  background-color: transparent;
+  border: 1px solid rgba(54, 56, 56, 0.7);
+  border-radius: 21px;
+  box-sizing: border-box;
+}
+.input-data::placeholder {
+  font-size: 16px;
+  color: #A1A1A1;
+}
+
+.submit-btn {
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #363838;
+  font-size: 16px;
+  color: #FFFFF0;
+  border: none;
+  border-radius: 21px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
