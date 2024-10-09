@@ -81,22 +81,40 @@
     &__info{
         max-width: 536px;
     }
-    &__info-text{
-        @extend %text-font;
-        color: $default;
-        max-width: 476px;
-        margin-bottom: 22px;
-    }
-    &__menu{
-        margin-left: auto;
-    }
-
     &__info-title{
         color: $black;
         @extend %title-font;
         margin-bottom: 14px;
         line-height: 23px;
     }
+    &__info-text{
+        @extend %text-font;
+        color: $default;
+        max-width: 476px;
+        margin-bottom: 22px;
+    }
+    &__info-email{
+        @extend %accent-font;
+        color:$default;
+        margin-bottom: 22px;
+        display: block;
+        padding-left: 30px;
+        position: relative;
+    }
+    
+    // HERE
+    // &__info-email::before{
+    //     content: '\f0e0';
+    //     @extend %icon-font;
+    //     position: absolute;
+    //     left:-30px;
+    //     top: 7%;
+    // } 
+    // WATCH HOW THE DUDE DO THAT
+    &__menu{
+        margin-left: auto;
+    }
+
     &__copyright{
         padding: 42px 0 41px;
         background-color: $black;

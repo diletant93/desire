@@ -1,6 +1,10 @@
 $default: #5A5A5A;
 $black: #363838;
 
+%icon-font{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
 %title-font{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -8,4 +12,8 @@ $black: #363838;
 %text-font{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+}
+%accent-font{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
 }

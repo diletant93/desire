@@ -8,6 +8,11 @@
   font-weight: 400;
 }
 
+.footer__info-email {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
 html,
 body {
   height: 100%;
@@ -165,18 +170,25 @@ table {
 .footer__info {
   max-width: 536px;
 }
+.footer__info-title {
+  color: #363838;
+  margin-bottom: 14px;
+  line-height: 23px;
+}
 .footer__info-text {
   color: #5A5A5A;
   max-width: 476px;
   margin-bottom: 22px;
 }
+.footer__info-email {
+  color: #5A5A5A;
+  margin-bottom: 22px;
+  display: block;
+  padding-left: 30px;
+  position: relative;
+}
 .footer__menu {
   margin-left: auto;
-}
-.footer__info-title {
-  color: #363838;
-  margin-bottom: 14px;
-  line-height: 23px;
 }
 .footer__copyright {
   padding: 42px 0 41px;
