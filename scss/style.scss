@@ -76,7 +76,6 @@
         display: flex;
         flex-direction: row;   
         gap:99px;
-        padding-right: 97px;
     }
     &__info{
         max-width: 539px;
@@ -105,6 +104,10 @@
         display: flex;
         gap: 9px;
     }
+    &__menu{
+        padding-right: 63px;
+        width: 125px;
+    }
     &__social-list,
      &__menu-list{
         display: flex;
@@ -116,8 +119,10 @@
         @extend %accent-font;
         color:  $grey;
         font-size: 14px;
-        padding-left: 28px;
         
+    }
+    &__social-link{
+        padding-left: 28px;
     }
    
     // // HERE

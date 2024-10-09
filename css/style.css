@@ -165,7 +165,6 @@ table {
   display: flex;
   flex-direction: row;
   gap: 99px;
-  padding-right: 97px;
 }
 .footer__info {
   max-width: 539px;
@@ -191,6 +190,10 @@ table {
   display: flex;
   gap: 9px;
 }
+.footer__menu {
+  padding-right: 63px;
+  width: 125px;
+}
 .footer__social-list, .footer__menu-list {
   display: flex;
   flex-direction: column;
@@ -199,6 +202,8 @@ table {
 .footer__social-item, .footer__menu-item {
   color: #707070;
   font-size: 14px;
+}
+.footer__social-link {
   padding-left: 28px;
 }
 .footer__menu {
