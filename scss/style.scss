@@ -178,7 +178,16 @@
 }
 
 .rightside-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 694px;
+    background-color: #A1A1A1;
+
     &__close{
+        margin-left: 47px;
+        margin-bottom: 57px;
         background-color: transparent;
         border:none;
         cursor: pointer;
@@ -203,6 +212,14 @@
             transform: rotate(-45deg);
         }
     }
+    &__content{
+        width: 100%;
+    }
+    .logo{
+        display: block;
+        text-align: center;
+    }
+    
 }
 
 .input-data{

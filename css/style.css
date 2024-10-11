@@ -255,7 +255,18 @@ table {
   text-align: center;
 }
 
+.rightside-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 694px;
+  background-color: #A1A1A1;
+  padding-top: 41px;
+}
 .rightside-menu__close {
+  margin-left: 47px;
+  margin-bottom: 57px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -279,6 +290,13 @@ table {
 }
 .rightside-menu__close span:nth-child(2) {
   transform: rotate(-45deg);
+}
+.rightside-menu__content {
+  width: 100%;
+}
+.rightside-menu .logo {
+  display: block;
+  text-align: center;
 }
 
 .input-data {
