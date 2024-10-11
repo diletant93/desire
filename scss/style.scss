@@ -176,6 +176,35 @@
         text-align: center;
     }
 }
+
+.rightside-menu{
+    &__close{
+        background-color: transparent;
+        border:none;
+        cursor: pointer;
+        height: 26px;
+        width: 26px;
+        position: relative;
+        span{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform-origin: center;
+            background-color: black;
+            border-radius: 2px;
+            width: 37px;
+            height: 3px;
+            transform: translateY(-50%);
+        }
+        span:nth-child(1){
+            transform: rotate(45deg);
+        }
+        span:nth-child(2){
+            transform: rotate(-45deg);
+        }
+    }
+}
+
 .input-data{
     width: 368px;
     padding: 13px 10px 11px 18px;
