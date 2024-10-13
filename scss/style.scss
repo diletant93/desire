@@ -176,20 +176,33 @@
         text-align: center;
     }
 }
-
 .rightside-menu{
-    position: absolute;
-    z-index: 1;
+    position: fixed;
     right: 0;
     top: 0;
-    bottom: 0;
-    max-width: 694px;
-    background-color: #A1A1A1;
     width: 100%;
-    padding-top: 41px;
-    transition: transform 1s;
+    height: 100%;
+    z-index: 1;
+    background-color:  rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    &__inner{
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        max-width: 694px;
+        background-color: #ffff;
+        width: 100%;
+        padding-top: 41px;
+
+    }
     &--closed{
-        transform: translateX(150%);
+        width: 0;
+        height: 0;
+        &__inner{
+            transform: translateX(150%);
+        }
     }
     &__close{
         margin-left: 47px;
@@ -223,7 +236,7 @@
         text-align: center;
         margin: 0 auto;
     }
-    .logo{
+    &__logo{
         display: block;
         margin-bottom: 41px;
     }
@@ -255,8 +268,9 @@
     }
     
 }
+
 .top{
-    
+
 }
 .input-data{
     width: 368px;

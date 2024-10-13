@@ -257,18 +257,31 @@ table {
 }
 
 .rightside-menu {
-  position: absolute;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.rightside-menu__inner {
+  position: absolute;
+  z-index: 2;
   right: 0;
   top: 0;
   bottom: 0;
   max-width: 694px;
-  background-color: #A1A1A1;
+  background-color: white;
   width: 100%;
   padding-top: 41px;
-  transition: transform 1s;
 }
 .rightside-menu--closed {
+  width: 0;
+  height: 0;
+}
+.rightside-menu--closed__inner {
   transform: translateX(150%);
 }
 .rightside-menu__close {
@@ -303,7 +316,7 @@ table {
   text-align: center;
   margin: 0 auto;
 }
-.rightside-menu .logo {
+.rightside-menu__logo {
   display: block;
   margin-bottom: 41px;
 }
