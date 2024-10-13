@@ -1,22 +1,7 @@
-function setRightsideMenu(){
-    const menuButton = document.querySelector('.header__button')
-    const rightsideMenu = document.querySelector('.rightside-menu')
-    const rightsideMenuCloseButton = document.querySelector('.rightside-menu__close')
-    
-    console.log(menuButton)
-    console.log(rightsideMenu)
-    console.log(rightsideMenuCloseButton)
-    function openRightSideMenu(){
-        rightsideMenu.classList.remove('rightside-menu--closed')
-    }
-    function closeRightSideMenu(){
-        rightsideMenu.classList.add('rightside-menu--closed')
-    }
-    menuButton.addEventListener('click', openRightSideMenu)
-    rightsideMenuCloseButton.addEventListener('click', closeRightSideMenu)
+import setRightsideMenu from "./index.js";
+import setSendingEmail from "./api.js";
 
-}
-async function loadHtml(elementid, filepath){
+export default async function loadHtml(elementid, filepath){
     fetch(filepath)
     .then(response => {
         if (!response.ok) {
@@ -25,12 +10,19 @@ async function loadHtml(elementid, filepath){
         return response.text();
     })
     .then(data => {
-        console.log(data)
         document.getElementById(elementid).innerHTML = data
-        setRightsideMenu()
-        
+
+        switch(elementid){
+            case 'header':
+                setRightsideMenu();
+                break;
+            case 'footer':
+                setSendingEmail();
+                break;
+            
+        }
     })
     .catch(error => console.error('There has been a problem with your fetch operation:', error));
 }
 
-// loadHtml('header','htmlComponents/header.html')
+
