@@ -11,5 +11,5 @@ export default function setRightsideMenu(){
     }
     menuButton.addEventListener('click', openRightSideMenu)
     rightsideMenuCloseButton.addEventListener('click', closeRightSideMenu)
-
+   
 }
