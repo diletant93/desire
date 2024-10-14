@@ -264,7 +264,7 @@ table {
   height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
+  transition: 1s;
 }
 .rightside-menu__inner {
   position: absolute;
@@ -276,10 +276,10 @@ table {
   background-color: white;
   width: 100%;
   padding-top: 41px;
+  transition: 1s;
 }
 .rightside-menu--closed {
-  width: 0;
-  height: 0;
+  display: none;
 }
 .rightside-menu--closed__inner {
   transform: translateX(150%);

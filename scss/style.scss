@@ -184,7 +184,7 @@
     height: 100%;
     z-index: 1;
     background-color:  rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
+    transition: 1s;
     &__inner{
         position: absolute;
         z-index: 2;
@@ -195,11 +195,10 @@
         background-color: #ffff;
         width: 100%;
         padding-top: 41px;
-
+        transition: 1s;
     }
     &--closed{
-        width: 0;
-        height: 0;
+        display: none;
         &__inner{
             transform: translateX(150%);
         }
