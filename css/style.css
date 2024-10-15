@@ -3,12 +3,12 @@
   font-weight: 700;
 }
 
-.input-data::placeholder, .rightside-menu__text, .footer__info-text {
+.rightside-menu__text, .footer__info-text, .input-data::placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
-.submit-btn, .footer__social-item, .footer__menu-item, .footer__info-email {
+.footer__social-item, .footer__menu-item, .footer__info-email, .submit-btn {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -45,6 +45,51 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.input-data {
+  width: 368px;
+  padding: 13px 10px 11px 18px;
+  background-color: transparent;
+  border: 1px solid rgba(54, 56, 56, 0.7);
+  border-radius: 21px;
+  box-sizing: border-box;
+}
+.input-data::placeholder {
+  font-size: 16px;
+  color: #A1A1A1;
+}
+
+.submit-btn {
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #363838;
+  font-size: 16px;
+  color: #FFFFF0;
+  border: none;
+  border-radius: 21px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 30px;
+  margin-top: -15px;
+}
+.slider-dots .slider-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #363838;
+  border: none;
+}
+.slider-dots .slider-dot--active {
+  background-color: #FFEF35;
 }
 
 /* _reset.scss */
@@ -345,6 +390,25 @@ table {
   margin-bottom: 75px;
 }
 
+.top {
+  padding-bottom: 145px;
+}
+.top__slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.top__slider-info {
+  max-width: 635px;
+  margin-top: -6%;
+}
+.top__slider-img {
+  max-width: 703px;
+  height: 815px;
+  object-fit: cover;
+  margin-left: -15%;
+}
 .top__slider-title {
   color: #363838;
   font-size: 110px;
@@ -362,31 +426,8 @@ table {
   left: 0;
   bottom: 0;
 }
-
-.input-data {
-  width: 368px;
-  padding: 13px 10px 11px 18px;
-  background-color: transparent;
-  border: 1px solid rgba(54, 56, 56, 0.7);
-  border-radius: 21px;
-  box-sizing: border-box;
-}
-.input-data::placeholder {
-  font-size: 16px;
-  color: #A1A1A1;
-}
-
-.submit-btn {
-  width: 160px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #363838;
-  font-size: 16px;
-  color: #FFFFF0;
-  border: none;
-  border-radius: 21px;
-  box-sizing: border-box;
-  cursor: pointer;
+.top__slider-title__slider-text {
+  max-width: 585px;
 }
 
 /*# sourceMappingURL=style.css.map */

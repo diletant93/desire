@@ -30,3 +30,50 @@ body{
     margin: 0 auto;
     padding:0 15px;
 }
+
+.input-data{
+    width: 368px;
+    padding: 13px 10px 11px 18px;
+    background-color: transparent;
+    border: 1px solid rgba($color: $black, $alpha: 0.7);
+    border-radius: 21px;
+    &::placeholder{
+        @extend %text-font;
+        font-size: 16px;
+        color: #A1A1A1;
+    }
+    box-sizing: border-box;
+}
+
+.submit-btn{
+    @extend %accent-font;
+    width: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $black;
+    font-size: 16px;
+    color: #FFFFF0;
+    border: none;
+    border-radius: 21px;
+    box-sizing: border-box ;
+    cursor: pointer;
+}
+.slider-dots{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+    margin-top: -15px;
+    .slider-dot{
+        cursor: pointer;
+        height: 12px;
+        width: 8px;
+        border-radius:50%;
+        background-color: $black;
+        border: none;
+    }
+    .slider-dot--active{
+        background-color: $active;
+    }
+
+}
