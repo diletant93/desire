@@ -14,25 +14,29 @@ export default function setRightsideMenu(){
     rightsideMenuCloseButton.addEventListener('click', closeRightSideMenu)
    
 }
-function setSliderDots(sliderItems) {
-    const buttons = document.querySelector('.slider-dots'); // If you have this element as a container for the dots
-    console.log(sliderItems);
+function setSliderDots(slider) {
+    const buttons = document.querySelector('.slider-dots');
+    const sliderItems = slider.querySelector('[data-slider-items]')
 
     for (let i = 0; i < sliderItems.children.length; i++) { // Ensure to loop over children, not just the length of the items array
         const button = document.createElement('button');
         button.classList.add('slider-dot');
-        
-       
-
         buttons.append(button);
     }
     buttons.children[0].classList.add('slider-dot--active')
+    let interval = window.setInterval(()=>{
+        slide(slider)
+    }, 3000)
     for (let i = 0; i < sliderItems.children.length; i++) {
         buttons.children[i].addEventListener('click', function (e) {
             buttons.querySelector('.slider-dot--active').classList.remove('slider-dot--active')
             delete sliderItems.querySelector('[data-slider-active]').dataset.sliderActive // Remove active from the currently active slide
             sliderItems.children[i].dataset.sliderActive = true // Set active on the clicked slide
             buttons.children[i].classList.add('slider-dot--active')
+            window.clearInterval(interval)
+            interval = window.setInterval(()=>{
+                slide(slider)
+            }, 3000)
         });
     }
     return buttons;
@@ -56,14 +60,10 @@ function slide(slider){
     buttons.children[newIndex].classList.add('slider-dot--active')
     sliderItems.children[newIndex].dataset.sliderActive = true
 }
-function setSlider(slider, sliderItems) {
-    slider.append(setSliderDots(sliderItems));   
+function setSlider(slider) {
+    slider.append(setSliderDots(slider));   
 }
 
 // Now you can pass the elements as arguments
 const slider = document.querySelector('[data-slider]');
-const sliderItems = document.querySelector('[data-slider-items]');
-setSlider(slider, sliderItems);
-window.setInterval(()=>{
-    slide(slider)
-}, 3000)
+setSlider(slider);

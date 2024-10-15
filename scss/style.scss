@@ -270,7 +270,18 @@
 }
 
 .top{
-    padding-bottom:145px;
+    &__inner{
+        padding-bottom:70px;
+        position: relative;
+        &::before{
+            content: '';
+            background-image: url(../images/main_slider-bg.jpg);
+            position:absolute;
+            width: 100%;
+            height: 722px;
+            z-index: -1;
+        }
+    }
     &__slider-items{
         position: relative;
         height: calc(100vh - 120px);
