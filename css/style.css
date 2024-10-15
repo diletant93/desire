@@ -1,4 +1,4 @@
-.rightside-menu__title, .footer__info-title, .menu__list-item {
+.top__slider-title, .rightside-menu__title, .footer__info-title, .menu__list-item {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -343,6 +343,24 @@ table {
   max-width: 483px;
   text-align: center;
   margin-bottom: 75px;
+}
+
+.top__slider-title {
+  color: #363838;
+  font-size: 110px;
+  line-height: 135px;
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+  position: relative;
+}
+.top__slider-title::after {
+  content: "";
+  height: 1px;
+  width: 185px;
+  background-color: #979797;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .input-data {

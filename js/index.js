@@ -14,3 +14,11 @@ export default function setRightsideMenu(){
     rightsideMenuCloseButton.addEventListener('click', closeRightSideMenu)
    
 }
+function setSlider(){
+    const buttons = document.querySelectorAll('[data-slider-button]')
+    for(let btn of buttons){
+        btn.addEventListener('click', ()=>{
+            
+        })
+    }
+}
