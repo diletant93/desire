@@ -74,11 +74,13 @@ body {
 }
 
 .slider-dots {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 0;
   gap: 30px;
   margin-top: -15px;
+  z-index: 1;
 }
 .slider-dots .slider-dot {
   cursor: pointer;
@@ -200,6 +202,7 @@ table {
 
 .logo {
   margin: 0 auto;
+  line-height: 0;
 }
 
 .footer__content {
@@ -393,11 +396,22 @@ table {
 .top {
   padding-bottom: 145px;
 }
+.top__slider-items {
+  position: relative;
+  height: calc(100vh - 120px);
+}
 .top__slider-item {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.top__slider-item[data-slider-active] {
+  opacity: 1;
 }
 .top__slider-info {
   max-width: 635px;

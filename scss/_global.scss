@@ -59,11 +59,13 @@ body{
     cursor: pointer;
 }
 .slider-dots{
+    position: relative;
     display: flex;
     justify-content: center;
     padding: 0;
     gap: 30px;
     margin-top: -15px;
+    z-index: 1;
     .slider-dot{
         cursor: pointer;
         height: 12px;

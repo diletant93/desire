@@ -63,6 +63,7 @@
 }
 .logo{
     margin: 0 auto;
+    line-height: 0;
 }
 
 .footer{
@@ -270,11 +271,22 @@
 
 .top{
     padding-bottom:145px;
+    &__slider-items{
+        position: relative;
+        height: calc(100vh - 120px);
+    }
     &__slider-item{
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 25px;
+        inset:  0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in ;
+    }
+    &__slider-item[data-slider-active]{
+        opacity: 1;
     }
     &__slider-info{
         max-width: 635px;
