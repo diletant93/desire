@@ -1,4 +1,4 @@
-.top__slider-title, .rightside-menu__title, .footer__info-title, .menu__list-item {
+.top__slider-title, .rightside-menu__title, .footer__info-title, .menu__list-item, .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -45,6 +45,17 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  color: #363838;
+  font-size: 36px;
 }
 
 .input-data {

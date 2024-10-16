@@ -30,6 +30,18 @@ body{
     margin: 0 auto;
     padding:0 15px;
 }
+.container-fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.title{
+    @extend %title-font;
+    color: $black;
+    font-size: 36px;
+}
 
 .input-data{
     width: 368px;
@@ -58,6 +70,8 @@ body{
     box-sizing: border-box ;
     cursor: pointer;
 }
+
+
 .slider-dots{
     position: relative;
     display: flex;
