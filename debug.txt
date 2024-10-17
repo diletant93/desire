@@ -1,2 +1,5 @@
 side menu: it's not sliding , just appearing + adjust the appearance of the background
-top carousel: add the mouth swipes
+top carousel: add the mouth swipes + it goes down when zooming 
+in and out (i guess we should set) the height to some fixable height
+
+

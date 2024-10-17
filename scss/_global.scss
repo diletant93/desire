@@ -95,3 +95,50 @@ body{
     }
 
 }
+
+.collection{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    &__item{
+        position: relative;
+    }
+    &__item:hover &__info{
+        opacity: 1;
+    }
+    &__images{
+        min-height: 350px;
+        object-fit: cover;
+    }
+    &__info{
+        position: absolute;
+        inset: 0;
+        background-color: rgba($color: #FFFFFF, $alpha: .7);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    &__item-title{
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 19px;
+        margin-bottom: 19px;
+        position: relative;
+        &::after{
+            content: '';
+            height: 1px;
+            width: 200px;
+            background-color: $title-line;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        } 
+    }
+
+}

@@ -107,6 +107,52 @@ body {
   background-color: #FFEF35;
 }
 
+.collection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.collection__item {
+  position: relative;
+}
+.collection__item:hover .collection__info {
+  opacity: 1;
+}
+.collection__images {
+  min-height: 350px;
+  object-fit: cover;
+}
+.collection__info {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.collection__item-title {
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 19px;
+  margin-bottom: 19px;
+  position: relative;
+}
+.collection__item-title::after {
+  content: "";
+  height: 1px;
+  width: 200px;
+  background-color: #979797;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 /* _reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -125,7 +171,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  box-sizing: inherit;
+  box-sizing: border-box;
   color: inherit;
   font-size: inherit;
 }
@@ -430,9 +476,11 @@ table {
   gap: 25px;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.5s ease-in;
+  transition-delay: 0.5s;
+  transition: opacity 0.5s ease-in-out;
 }
 .top__slider-item[data-slider-active] {
+  transition-delay: 0s;
   opacity: 1;
 }
 .top__slider-info {
@@ -464,6 +512,36 @@ table {
 }
 .top__slider-title__slider-text {
   max-width: 585px;
+}
+
+.new-collection {
+  text-align: center;
+  padding: 45px 0 105px;
+}
+.new-collection__inner {
+  display: block;
+}
+.new-collection__title {
+  max-width: 542px;
+  line-height: 51px;
+  padding-bottom: 25px;
+  margin: 0 auto 25px;
+  position: relative;
+}
+.new-collection__title::after {
+  content: "";
+  height: 1px;
+  width: 239px;
+  background-color: #979797;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.new-collection__text {
+  max-width: 730px;
+  margin: 0 auto 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
