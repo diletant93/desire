@@ -404,3 +404,24 @@
 
 }
 
+.workflow{
+    padding-top: 79px;
+    padding-bottom: 108px;
+}
+.products{
+    &__categories{
+
+    }
+    &__option-btn{
+        @extend %accent-font;
+        padding: 6px 16px;
+        background-color: transparent;
+        border: 1px solid #454647;
+        border-radius: 20px;
+        
+    }
+    &__option-btn--active{
+        border: none;
+        background-color: #FFEF35;
+    }
+}

@@ -18,7 +18,7 @@
   font-weight: 400;
 }
 
-.footer__social-item, .footer__menu-item, .footer__info-email, .submit-btn {
+.products__option-btn, .footer__social-item, .footer__menu-item, .footer__info-email, .submit-btn {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -573,6 +573,22 @@ table {
 }
 .decor__info-text {
   max-width: 540px;
+}
+
+.workflow {
+  padding-top: 79px;
+  padding-bottom: 108px;
+}
+
+.products__option-btn {
+  padding: 6px 16px;
+  background-color: transparent;
+  border: 1px solid #454647;
+  border-radius: 20px;
+}
+.products__option-btn--active {
+  border: none;
+  background-color: #FFEF35;
 }
 
 /*# sourceMappingURL=style.css.map */
