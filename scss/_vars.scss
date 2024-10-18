@@ -3,6 +3,15 @@ $black: #363838;
 $grey:#707070;
 $title-line: #979797;
 $active: #FFEF35;
+%title-line{
+    content: '';
+    height: 1px;
+    background-color: $title-line;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 %icon-font{
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
