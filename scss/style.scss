@@ -359,3 +359,48 @@
     }
 }
 
+
+
+
+.decor{
+    position: relative;
+    padding-top: 172px;
+    padding-bottom: 156px;
+    background-color: rgba($color: #ffff, $alpha: 0.7);
+    &__inner{
+        &::before{
+            content: '';
+            background-image: url(../images/decor-bg.jpg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            inset: 0;
+
+            z-index: -1;
+        }
+    }
+    &__info{
+        max-width: 731px;
+    }
+    &__info-title{
+        font-size: 60px;
+        line-height: 80px;
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+        position: relative;
+        &::after{
+            @extend %title-line;
+            width: 200px;
+            margin-right: auto;
+
+        }
+
+    }
+    &__info-text{
+        max-width: 540px;
+    }
+
+
+}
+
