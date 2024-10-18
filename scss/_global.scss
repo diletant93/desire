@@ -143,5 +143,41 @@ body{
 
 }
 .categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    &__option-btn{
+        @extend %accent-font;
+        padding: 6px 16px;
+        background-color: transparent;
+        border: 1px solid #8F8D8D;
+        border-radius: 20px;
+        color: #8F8D8D;
+        cursor: pointer;
+        line-height: 28px;
+     
+        
+    }
+    &__option-btn--active{
+        border: none;
+        background-color: #FFEF35;
+        color: $black;
+    }
+}
+.showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 574px 574px;
+    gap: 30px;
+    &__big-img,
+    &__small-img{
+     min-height: 100%;
+    }
+    &__big-img{
+        grid-area: 1/1/3/2;
+        height: 100%;
+        object-fit: cover;
+    }
     
 }

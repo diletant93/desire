@@ -367,6 +367,7 @@
     padding-top: 172px;
     padding-bottom: 156px;
     background-color: rgba($color: #ffff, $alpha: 0.7);
+    min-height: 616px;
     &__inner{
         &::before{
             content: '';
@@ -374,6 +375,7 @@
             width: 100%;
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             position: absolute;
             inset: 0;
 
@@ -407,21 +409,12 @@
 .workflow{
     padding-top: 79px;
     padding-bottom: 108px;
+    &__title{
+        text-align: center;
+    }
 }
 .products{
     &__categories{
-
-    }
-    &__option-btn{
-        @extend %accent-font;
-        padding: 6px 16px;
-        background-color: transparent;
-        border: 1px solid #454647;
-        border-radius: 20px;
-        
-    }
-    &__option-btn--active{
-        border: none;
-        background-color: #FFEF35;
+        margin-bottom: 40px;
     }
 }
