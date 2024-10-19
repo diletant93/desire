@@ -625,6 +625,49 @@ table {
 .workflow__items-box {
   display: flex;
   gap: 313px;
+  border-bottom: 2px solid #363838;
+  position: relative;
+}
+.workflow__items-box::before {
+  content: "";
+  background-color: #363838;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  bottom: -5.5px;
+  left: -5px;
+}
+.workflow__item--desiner {
+  padding-bottom: 22px;
+}
+.workflow__item--production, .workflow__item--measurements {
+  position: relative;
+}
+.workflow__item--production::after, .workflow__item--measurements::after {
+  content: "";
+  position: absolute;
+  background-color: #363838;
+  height: 2px;
+  width: 20px;
+  transform: rotate(90deg);
+}
+.workflow__item--production {
+  padding-top: 36px;
+  padding-bottom: 22px;
+}
+.workflow__item--production::after {
+  left: -2px;
+  bottom: 8px;
+}
+.workflow__item--measurements {
+  display: inline-block;
+  margin-left: 300px;
+  padding-top: 30px;
+}
+.workflow__item--measurements::after {
+  top: 8px;
+  left: -7px;
 }
 .workflow__item-title {
   font-size: 16px;

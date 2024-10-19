@@ -418,8 +418,51 @@
     &__items-box{
         display: flex;
         gap: 313px;
+        border-bottom:2px solid $black;
+        position: relative;
+        &::before{
+            content: '';
+            background-color:$black ;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            bottom: -5.5px;
+            left: -5px;
+        }
     }
-
+    &__item--desiner{
+        padding-bottom: 22px;
+    }
+    &__item--production,
+    &__item--measurements{
+        position: relative;
+         &::after{
+            content: '';
+            position: absolute;
+            background-color:$black;
+            height: 2px;
+            width: 20px;
+            transform: rotate(90deg);
+        }
+    }
+    &__item--production{
+        padding-top: 36px;
+        padding-bottom: 22px;
+        &::after{
+            left: -2px;
+            bottom: 8px;
+        }
+    }
+    &__item--measurements{
+        display: inline-block;
+        margin-left: 300px;
+        padding-top: 30px;
+        &::after{
+            top: 8px;
+            left: -7px;
+        }
+    }
     &__item-title{
         font-size: 16px;
         line-height: 23px;
