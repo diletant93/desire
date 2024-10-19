@@ -408,12 +408,72 @@
 
 .workflow{
     padding-top: 79px;
-    padding-bottom: 108px;
+    padding-bottom: 30px;
     &__title{
         text-align: center;
+        margin-bottom: 50px;
+        line-height: 51px;
+    }
+
+    &__items-box{
+        display: flex;
+        gap: 313px;
+    }
+
+    &__item-title{
+        font-size: 16px;
+        line-height: 23px;
+        padding-left: 52px;
+        margin-bottom: 13px;
+        position: relative;
+        &::before{
+            position: absolute;
+            transform:translateY(-50%);
+            left: 0;
+            top: 50%;
+        }
+    }
+    &__item-title--desiner{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &::before{
+            content: '';
+            background-image: url(../images/icons/desiner.svg);
+           
+            height: 42px;
+            width: 41px;
+
+        }
+    }
+    &__item-title--production{
+        padding-top: 5px;
+        padding-bottom: 6px;
+        &::before{
+            content: '';
+            background-image: url(../images/icons/produciton.svg);
+            height: 34px;
+            width: 38px;
+
+        }
+    }
+    &__item-title--measurements{
+        &::before{
+            padding-top: 2px;
+            padding-bottom: 2px;
+            content: '';
+            background-image: url(../images/icons/measurements.svg);
+            height: 22px;
+            width: 38px;
+
+        }
+    }
+    &__item-text{
+        color: $default;
+        max-width: 246px;
     }
 }
 .products{
+    padding-top: 80px;
     &__categories{
         margin-bottom: 40px;
     }

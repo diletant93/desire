@@ -615,12 +615,66 @@ table {
 
 .workflow {
   padding-top: 79px;
-  padding-bottom: 108px;
+  padding-bottom: 30px;
 }
 .workflow__title {
   text-align: center;
+  margin-bottom: 50px;
+  line-height: 51px;
+}
+.workflow__items-box {
+  display: flex;
+  gap: 313px;
+}
+.workflow__item-title {
+  font-size: 16px;
+  line-height: 23px;
+  padding-left: 52px;
+  margin-bottom: 13px;
+  position: relative;
+}
+.workflow__item-title::before {
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0;
+  top: 50%;
+}
+.workflow__item-title--desiner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.workflow__item-title--desiner::before {
+  content: "";
+  background-image: url(../images/icons/desiner.svg);
+  height: 42px;
+  width: 41px;
+}
+.workflow__item-title--production {
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
+.workflow__item-title--production::before {
+  content: "";
+  background-image: url(../images/icons/produciton.svg);
+  height: 34px;
+  width: 38px;
+}
+.workflow__item-title--measurements::before {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  content: "";
+  background-image: url(../images/icons/measurements.svg);
+  height: 22px;
+  width: 38px;
+}
+.workflow__item-text {
+  color: #5A5A5A;
+  max-width: 246px;
 }
 
+.products {
+  padding-top: 80px;
+}
 .products__categories {
   margin-bottom: 40px;
 }
