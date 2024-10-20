@@ -67,7 +67,6 @@
 }
 
 .footer{
-
     &__content{
         background-color: #DFDFDF;
         padding-top: 61px;
@@ -521,4 +520,38 @@
         margin-bottom: 40px;
     }
 }
+.blog{
+    padding-top: 88px;
+    padding-bottom: 52px;
+    &__title{
+        text-align: center;
+        line-height: 51px;
+        max-width: 430px;
+        margin: 0 auto;
+        margin-bottom: 29px;
+    }
+    &__cards{
+        display: flex;
+        gap: 30px;
+    }
+    &__card-link{
+        display: block;
+        margin-bottom: 19px;
+    }
+    &__card-image{
+        min-width: 48.5%;
+        object-fit: cover;
+    }
+    &__card-author{
+        margin-bottom: 7px;
+    }
+    &__card-title{
+        line-height: 38px;
+        font-size: 24px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
 
+}

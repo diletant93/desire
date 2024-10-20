@@ -68,6 +68,14 @@ body {
   font-size: 36px;
 }
 
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #5A5A5A;
+}
+
 .input-data {
   width: 368px;
   padding: 13px 10px 11px 18px;
@@ -781,6 +789,40 @@ table {
 }
 .products__categories {
   margin-bottom: 40px;
+}
+
+.blog {
+  padding-top: 88px;
+  padding-bottom: 52px;
+}
+.blog__title {
+  text-align: center;
+  line-height: 51px;
+  max-width: 430px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+}
+.blog__cards {
+  display: flex;
+  gap: 30px;
+}
+.blog__card-link {
+  display: block;
+  margin-bottom: 19px;
+}
+.blog__card-image {
+  min-width: 48.5%;
+  object-fit: cover;
+}
+.blog__card-author {
+  margin-bottom: 7px;
+}
+.blog__card-title {
+  line-height: 38px;
+  font-size: 24px;
+}
+.blog__card-title:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
