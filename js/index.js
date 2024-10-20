@@ -63,7 +63,88 @@ function slide(slider){
 function setSlider(slider) {
     slider.append(setSliderDots(slider));   
 }
+const photoSet= {
+    livingroomFurniture:{
+        main:"showcase-img-b.jpg",
+        thumbnails:[
+            'showcase-img-s1.jpg',
+            'showcase-img-s2.jpg',
+            'showcase-img-s3.jpg',
+            'showcase-img-s4.jpg',
+        ]
+    },
+    bedroomFurniture:{
+        main:"showcase-img-b2.jpg",
+        thumbnails:[
+            'showcase-img-s5.jpg',
+            'showcase-img-s6.jpg',
+            'showcase-img-s7.jpg',
+            'showcase-img-s8.jpg',
+        ]
+    }
+}
+const rootImages= '/images/content/'
+function getPicturesSet(category){
+    return photoSet[category]
+}
+function movePicturesAside(mainImage,subImages){
+    mainImage.classList.remove('slideBackRight')
+    subImages.forEach((image)=>{
+       image.classList.remove('slideBackLeft')
+    })    
+    mainImage.classList.add('slideLeft')
+    subImages.forEach((image)=>{
+       image.classList.add('slideRight')
+    })    
+}
+function movePicturesBack(mainImage,subImages){
+    
+    mainImage.classList.remove('slideLeft')
+    subImages.forEach((image)=>{
+       image.classList.remove('slideRight')
+    })    
+    
+    mainImage.classList.add('slideBackRight')
+    subImages.forEach((image)=>{
+       image.classList.add('slideBackLeft')
+    })    
+}
+function changePictures(e,category){
+    const mainImage = document.querySelector('.showcase__big-img')
+    const subImages = document.querySelectorAll('.showcase__small-img')
 
-// Now you can pass the elements as arguments
+    movePicturesAside(mainImage,subImages)
+    const imageSrcSet = getPicturesSet(category)
+
+    setTimeout(()=>{
+        mainImage.src = rootImages + imageSrcSet.main
+
+        subImages.forEach((image,index)=>{
+            image.src = rootImages + imageSrcSet.thumbnails[index]
+        })
+        
+        movePicturesBack(mainImage,subImages)
+    
+    },700)
+  
+
+    const activeButton = e.target.parentElement.querySelector('.categories__option-btn--active')
+    
+    activeButton.classList.remove('categories__option-btn--active')
+    e.target.classList.add('categories__option-btn--active')
+    
+}
+
+function dontKnowHowToName(){
+    const buttons = document.querySelectorAll('[data-category-button]')
+    for (const button of buttons) {
+        button.addEventListener('click',function(e){
+            changePictures(e,button.dataset.categoryButton)
+        })
+    }
+}
+
+
+dontKnowHowToName()
 const slider = document.querySelector('[data-slider]');
 setSlider(slider);

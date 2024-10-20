@@ -15,7 +15,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <script src="js/api.js" defer></script>
+    <!-- <script src="js/api.js" defer></script> -->
 </head>
 <body>
     <div class="wrapper">
@@ -31,12 +31,74 @@
         </main>
         <footer class="footer" id="footer"></footer>
     </div>
+    <section class="products">
+        <div class="container-fluid">
+          <div class="products__inner">
+            <div class="products__categories categories">
+              <button class="categories__option-btn" data-category-button="bedroomFurniture">
+              Bedroom furniture
+              </button>
+              <button class="categories__option-btn categories__option-btn--active" data-category-button="livingroomFurniture" data-category-active>
+                Living room furniture
+              </button>
+              <button class="categories__option-btn" data-category-button="officeFurtniture">
+                Office furniture
+              </button>
+              <button class="categories__option-btn" data-category-button="diningroomFurniture">
+                Dining room futniture
+              </button>
+              <button class="categories__option-btn" data-category-button="chairFurniture">
+                Chair
+              </button>
+            </div>
+            <div class="showcase">
+              <img class="showcase__big-img " src="images/content/showcase-img-b.jpg" alt="" >
+              <img class="showcase__small-img " src="images/content/showcase-img-s1.jpg" alt="" >
+              <img class="showcase__small-img " src="images/content/showcase-img-s2.jpg" alt="" >
+              <img class="showcase__small-img" src="images/content/showcase-img-s3.jpg" alt="" >
+              <img class="showcase__small-img" src="images/content/showcase-img-s4.jpg" alt="" >
+            </div>
+          </div>
+        </div>
+       </section>
 
+       <section class="products">
+        <div class="container-fluid">
+          <div class="products__inner">
+            <div class="products__categories categories">
+              <button class="categories__option-btn" data-category-button="bedroomFurniture">
+              Bedroom furniture
+              </button>
+              <button class="categories__option-btn categories__option-btn--active" data-category-button="livingroomFurniture" data-category-active>
+                Living room furniture
+              </button>
+              <button class="categories__option-btn" data-category-button="officeFurtniture">
+                Office furniture
+              </button>
+              <button class="categories__option-btn" data-category-button="diningroomFurniture">
+                Dining room futniture
+              </button>
+              <button class="categories__option-btn" data-category-button="chairFurniture">
+                Chair
+              </button>
+            </div>
+            <div class="showcase">
+              <img class="showcase__big-img " src="images/content/showcase-img-b.jpg" alt="" >
+              <img class="showcase__small-img " src="images/content/showcase-img-s1.jpg" alt="" >
+              <img class="showcase__small-img " src="images/content/showcase-img-s2.jpg" alt="" >
+              <img class="showcase__small-img" src="images/content/showcase-img-s3.jpg" alt="" >
+              <img class="showcase__small-img" src="images/content/showcase-img-s4.jpg" alt="" >
+            </div>
+          </div>
+        </div>
+       </section>
 
-      <script type="module">
+       <script type="module" src="js/index.js"></script>
+
+      <!-- <script type="module">
         import loadHtml from './js/componentsInjecting.js'
         loadHtml('header','htmlComponents/header.html')
         loadHtml('footer','htmlComponents/footer.html')
-      </script>
+      </script> -->
 </body>
 </html>

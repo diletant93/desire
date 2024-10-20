@@ -1,5 +1,7 @@
-side menu: it's not sliding , just appearing + adjust the appearance of the background
-top carousel: add the mouth swipes + it goes down when zooming 
+1)side menu: it's not sliding , just appearing + adjust the appearance of the background
+2)top carousel: add the mouth swipes + it goes down when zooming 
 in and out (i guess we should set) the height to some fixable height
+3)fix the fixated widht. use just %
+4)fix the gallery (block the buttons when it's animating)
 
 
